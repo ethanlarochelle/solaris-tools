@@ -7,6 +7,7 @@ functionality.
 # Requirements
 ## Python 3
 Verify you are using Python 3
+
 In the terminal, type:
 >$ python3 --version
 
@@ -41,7 +42,7 @@ Change the following lines:
 
 >c.NotebookApp.enable_mathjax = True
 
->c.NotebookApp.notebook_dir = '/hour/home/directory/Notebooks'
+>c.NotebookApp.notebook_dir = '/your/home/directory/Notebooks'
 
 clone the current reposity into you notebook directory:
 >$ git clone https://github.com/ethanlarochelle/solaris-tools.git
