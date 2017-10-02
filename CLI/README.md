@@ -8,14 +8,20 @@ The Solaris software does not have capability to export full bitdepth (16-bit) i
 
 ### Using CLI Solaris Batch Export
 * **TLDR: Edit .bat file with experiment name**
+![Edit .bat file](screenshots/edit.PNG)
 
 
-* Follow installation documentation for Windows
+* [Follow installation documentation for Windows](../README.md)
 * Right click .bat file and edit contents to specific experiment directory
   * The Python file assumes certain locations  for input and output directories are in place:
     * Input directory: D:\\\\SolarisData\\Research\\
     * Output directory: D:\\\\ExportData
+    ![Directories](screenshots/directories.PNG)
 
-* Run the .bat file by double clicking. A command window will show progress.
+* Run the .bat file by double clicking.
+![Double click icon](screenshots/icon.PNG)
+* A command window will show progress.
+![CMD outout](screenshots/cmd.PNG)
 * Check output directory for new folder
+![Output Directory](screenshots/outuput.PNG)
 * Enjoy .TIF images
