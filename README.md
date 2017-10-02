@@ -4,18 +4,12 @@ that can be used to interact with data collected by the PerkinElmer
 Solaris imaging system. Very limited testing has been done to verify
 functionality.
 
-# Notebooks
-## Solaris Batch Export
-This is a iPython (Jupyter) notebook written to batch convert data into
+# Notebook
+Contains an iPython (Jupyter) notebook written to batch convert data into
 image files that can be analyzed using third-party software. 
-It was written using Python 3.4
 
-### Background
-The Solaris software does not have capability to export full bitdepth (16-bit) images to image files.  It converts them to 8-bit RGB images, forcing the user to either: 1) analyze images that have far inferior dynamic range than the originally acquired images, or 2) use the rudimentary image analysis tools on the Solaris Analysis software to analyze full bitdepth 16-bit images.  Both of these options are sub-optimal.  Moreover, the Solaris software requires the user to export each image individually - a tediously mind-numbing exercise that is an incredible waste of skilled full-time employee resources.  Ideally, we would like to batch export images at full bitdepth and use third-party software, such as NIH ImageJ, to analyze the images, which would enable the use of sophisticated techniques like thresholding, determining area, or determining integrated density. 
-
-### Using Solaris Batch Export
-* **TLDR: Edit cell with input and output directories**
-* Then run each cell sequentially. Depending on whether the user supplied group information will dictate whether you use the "Group" or "No Group" code block to process the images
+# CLI
+Command line interface for batch exporting Solaris experiment data. This tool can be called from a .bat file on the Solaris to export whole experiment directories to 16-bit TIF images.
 
 # Future tools
 Other scripts to analyze video content have also been developed. As 
@@ -105,7 +99,7 @@ Start Jupyter:
       * The -y flag confirms automatically to run the script without being prompted
 * Install Python 3 using Chocolatey
   * `choco install -y python3`
-  * pgrade pip software package manager for Python:
+  * upgrade pip software package manager for Python:
     * `python -m pip install --upgrade pip`
       * If this fails due to SSL issue, one work-around is posted at on [StackOverflow](https://stackoverflow.com/questions/25981703/pip-install-fails-with-connection-error-ssl-certificate-verify-failed-certi)
 ### Installing and Using Virtual Environments

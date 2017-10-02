@@ -347,7 +347,7 @@ if __name__ == "__main__":
 
     ## MODIFY HERE ##
     input_root_dir = 'D:\\\\SolarisData\\Research\\'
-    output_root_dir = 'D:\\\\ExperimentData\\Research\\'
+    output_root_dir = 'D:\\\\ExportData\\'
     ## STOP MODIFY ##
 
     cur_experiment_dir = args.experiment
